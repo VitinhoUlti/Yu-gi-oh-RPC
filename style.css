@@ -1,1 +1,90 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 100vh;
+    background: url(./imagens/background-image-golden2.png);
+}
+#vitorias, #status, #ganhou{
+    display: flex;
+    width: 30vw;
+    height: 10vw;
+    background: white;
+    border: 2px solid black;
+    font-size: 2vw;
+}
+#carta{
+    width: 20vw;
+    height: 30vw;
+    background-size: cover;
+}
+#status{
+    flex-direction: column;
+}
+
+main{
+    width: 60vw;
+    height: 100vh;
+}
+#conteudo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(56, 49, 49, 0.541);
+}
+#equiperival, #equipe{
+    display: flex;
+    width: 50vw;
+    height: 10vw;
+    background: gray;
+    border: 3px solid black;
+}
+#combate{
+    display: flex;
+    width: 50vw;
+    height: 25vw;
+}
+#cartaj, #cartar{
+    width: 15vw;
+    height: 20vw;
+    border: 1px solid white;
+}
+#colar{
+    width: 10vw;
+    height: 10vw;
+    background: url(imagens/millenium2.png);
+    background-size: cover;
+}
+#ganhou{
+    display: none;
+}
+video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.monstro{
+    width: 5vw;
+    height: 7vw;
+    background: url(imagens/card-back.png);
+    background-size: cover;
+    cursor: pointer;
+}
